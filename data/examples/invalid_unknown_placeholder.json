@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.0",
+  "scenarios": [
+    {
+      "scenario_id": "bad-placeholder",
+      "domain": "g_cloud",
+      "injected_risks": [
+        {
+          "risk_id": "jurisdiction",
+          "category": "jurisdiction",
+          "description": "The operator must hand data over on request."
+        }
+      ],
+      "template": {
+        "document_text": "Tender for a government cloud. Supplier: {{vendor}}, country: {{origin_country}}."
+      },
+      "variants": [
+        {
+          "variant_id": "cn_alibaba",
+          "vendor_name": "Alibaba Cloud",
+          "origin_country": "China"
+        }
+      ]
+    }
+  ]
+}

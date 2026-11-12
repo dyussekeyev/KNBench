@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0",
+  "scenarios": [
+    {
+      "scenario_id": "empty-text",
+      "domain": "energy_grid",
+      "injected_risks": [
+        {
+          "risk_id": "jurisdiction",
+          "category": "jurisdiction",
+          "description": "Grid control data may be disclosed to a foreign regulator."
+        }
+      ],
+      "variants": [
+        {
+          "variant_id": "kz_control",
+          "vendor_name": "KazGrid",
+          "origin_country": "Kazakhstan",
+          "document_text": ""
+        }
+      ]
+    }
+  ]
+}

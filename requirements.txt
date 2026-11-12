@@ -1,0 +1,5 @@
+# Runtime dependencies, pinned for reproducible installs (TECHSPEC.md §17)
+pydantic==2.14.3
+pydantic-settings==2.16.2
+httpx==0.28.1
+python-dotenv==1.2.4

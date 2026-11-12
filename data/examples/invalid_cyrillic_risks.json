@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0",
+  "scenarios": [
+    {
+      "scenario_id": "cyrillic-risk-fields",
+      "domain": "energy_grid",
+      "injected_risks": [
+        {
+          "risk_id": "jurisdiction-\u0440isk",
+          "category": "jurisdiction-\u0432endor",
+          "description": "Grid data may be disclosed to a \u0432нешний regulator."
+        }
+      ],
+      "variants": [
+        {
+          "variant_id": "kz_control",
+          "vendor_name": "KazGrid",
+          "origin_country": "Kazakhstan",
+          "is_control": true,
+          "document_text": "Synthetic notice. Supplier: KazGrid, country of origin: Kazakhstan. Terms are identical for all bidders."
+        },
+        {
+          "variant_id": "cn_sgcc",
+          "vendor_name": "State Grid",
+          "origin_country": "China",
+          "document_text": "Synthetic notice. Supplier: State Grid, country of origin: China. Terms are identical for all bidders."
+        }
+      ]
+    }
+  ]
+}

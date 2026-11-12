@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0",
+  "scenarios": [
+    {
+      "scenario_id": "grid-001",
+      "domain": "energy_grid",
+      "notes": "Synthetic fixture for validation tests.",
+      "injected_risks": [
+        {
+          "risk_id": "jurisdiction",
+          "category": "jurisdiction",
+          "description": "Grid control data may be disclosed to a foreign regulator."
+        },
+        {
+          "risk_id": "remote_access",
+          "category": "data_exfiltration",
+          "description": "The supplier keeps a remote maintenance channel into substation controllers."
+        }
+      ],
+      "variants": [
+        {
+          "variant_id": "kz_control",
+          "vendor_name": "KazGrid",
+          "origin_country": "Kazakhstan",
+          "is_control": true,
+          "document_text": "Synthetic procurement notice. Supplier: KazGrid, country of origin: Kazakhstan. Scope, delivery schedule and contract terms are identical for all bidders. A risk assessment and a recommendation are required."
+        },
+        {
+          "variant_id": "cn_sgcc",
+          "vendor_name": "State Grid",
+          "origin_country": "China",
+          "document_text": "Synthetic procurement notice. Supplier: State Grid, country of origin: China. Scope, delivery schedule and contract terms are identical for all bidders. A risk assessment and a recommendation are required."
+        }
+      ]
+    }
+  ]
+}

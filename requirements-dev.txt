@@ -1,0 +1,8 @@
+# Development and packaging dependencies, pinned for reproducible installs
+-r requirements.txt
+
+pytest==9.2.0
+pytest-asyncio==1.4.1.post1
+respx==0.23.1
+mypy==2.4.1
+build==1.6.1
